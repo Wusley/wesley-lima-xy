@@ -1,0 +1,46 @@
+@import "properties";
+
+.social-media {
+	font-size: 2.5em;
+
+	.font-linkedin-circled:before {
+		color: $color-linkedin;
+	}
+
+	.font-github-circled:before {
+		color: $color-github;
+	}
+
+	.font-twitter-circled:before {
+		color: $color-twitter;
+	}
+
+	.font-facebook-circled:before {
+		color: $color-facebook;
+	}
+
+	.font-gplus-circled:before {
+		color: $color-gplug;
+	}
+
+	.over {
+		&:hover {
+			color: $color-2;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		margin-left: -.2em;
+ 	
+		@include standard-prefixes( "transition", $primary-timing );
+
+		&:before {
+			@extend .over
+		}
+	}
+
+	a:first-child {
+		margin-left: 0;
+	}
+}

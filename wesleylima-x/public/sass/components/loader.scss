@@ -1,0 +1,81 @@
+@import "properties";
+
+@-webkit-keyframes rotation {
+    0% {
+    	-webkit-transform: rotate( 0deg );
+    	transform: rotate( 0deg );
+    }
+
+    100% { 
+    	-webkit-transform: rotate( 359deg );
+    	transform: rotate( 359deg );
+    }
+}
+
+@-moz-keyframes rotation {
+    0% {
+    	-moz-transform: rotate( 0deg );
+    	transform: rotate( 0deg );
+    }
+
+    100% { 
+    	-moz-transform: rotate( 359deg );
+    	transform: rotate( 359deg );
+    }
+}
+
+@-o-keyframes rotation {
+    0% {
+    	-o-transform: rotate( 0deg );
+    	transform: rotate( 0deg );
+    }
+
+    100% { 
+    	-o-transform: rotate( 359deg );
+    	transform: rotate( 359deg );
+    }
+}
+
+@keyframes rotation {
+    0% {
+    	transform: rotate( 0deg );
+    }
+
+    100% { 
+    	transform: rotate( 359deg );
+    }
+}
+
+.loader {
+    display: block;
+    margin: 0 auto;
+	-webkit-animation: rotation .8s infinite linear;
+	-moz-animation: rotation .8s infinite linear;
+	-o-animation: rotation .8s infinite linear;
+	animation: rotation .8s infinite linear;
+}
+
+.palette-1 {
+    fill: $color-5;
+    stroke: $color-5;
+}
+
+.palette-2 {
+    fill: $color-6;
+    stroke: $color-6;
+}
+
+.palette-3 {
+    fill: $color-7;
+    stroke: $color-7;
+}
+
+.palette-4 {
+    fill: $color-8;
+    stroke: $color-8;
+}
+
+.palette-5 {
+    fill: $color-9;
+    stroke: $color-9;
+}

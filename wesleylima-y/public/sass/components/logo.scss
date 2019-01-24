@@ -1,0 +1,160 @@
+@import "properties";
+
+/*
+* Size head
+*/
+$reduce: .13;
+$mask-width-percent: 100%;
+$mask-width-em: 25em * $reduce;
+$border-width: 0.03 * $mask-width-em; 
+
+@-webkit-keyframes blink {
+	0% {
+		-webkit-transform: scaleY( .1 );
+		transform: scaleY( .1 );
+	}
+	1% {
+		-webkit-transform: scaleY( 1 );
+		transform: scaleY( 1 );
+	}
+	100% {
+		-webkit-transform: scaleY( 1 );
+		transform: scaleY( 1 );		
+	}
+}
+
+@-moz-keyframes blink {
+	0% {
+		-moz-transform: scaleY( .1 );
+		transform: scaleY( .1 );
+	}
+	1% {
+		-moz-transform: scaleY( 1 );
+		transform: scaleY( 1 );
+	}
+	100% {
+		-moz-transform: scaleY( 1 );
+		transform: scaleY( 1 );
+	}
+}
+
+@-o-keyframes blink {
+	0% {
+		-o-transform: scaleY( .1 );
+		transform: scaleY( .1 );
+	}
+	1% {
+		-o-transform: scaleY( 1 );
+		transform: scaleY( 1 );
+	}
+	100% {
+		-o-transform: scaleY( 1 );
+		transform: scaleY( 1 );
+	}
+}
+
+@keyframes blink {
+	0% {
+		transform: scaleY( .1 );
+	}
+	1% {
+		transform: scaleY( 1 );
+	}
+	100% {
+		transform: scaleY( 1 );
+	}
+}
+
+.wrapper-logo-complex {
+	position: relative;
+	display: table;
+	width: $mask-width-percent;
+	height: $mask-width-percent;
+	//overflow: hidden;
+
+	@include border-radius( 50% );
+}
+
+.logo-complex {
+	display: table;
+	width: 100%;
+	height: 100%;
+	border: $border-width solid $color-10;
+	background-color: $color-2;
+
+	@include box-sizing( border-box );
+	@include border-radius( 50% );
+
+	/*
+	* Mask head
+	*/
+	&:before {
+		content: '';
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: $mask-width-percent;
+		height: $mask-width-percent;
+		border-color: transparent;
+		border: $border-width solid rgba(0,0,0,.05);
+		background-color: transparent;
+		z-index: 2;
+
+		@include border-radius( 50% );
+		@include box-shadow( $color-4 0 .1em 0 ( $mask-width-em * .115 ) );
+		@include box-sizing( border-box );
+	}
+
+	/*
+	* Eixo
+	*/
+	.root {
+		position: absolute;
+		width: 90%;
+		height: 90%;
+		top: 50%;
+		left: 50%;
+		margin: -32% 0 0 -45.5%;
+		background-color: transparent;
+		z-index: 1;
+
+		@include transform-style( preserve-3d );
+		@include transition-duration( $primary-timing );
+
+		/*
+		* Face form
+		*/
+		.face {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: url('/images/face.svg') no-repeat;
+			z-index: 1;
+
+			//@include transform( translateZ( $mask-width-em * .42 ) );
+			@include transform( translateZ( $mask-width-em * .45 ) );
+			@include transform-style( preserve-3d );
+		}
+
+		/*
+		* Eyes form
+		*/
+		.face:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			background: url('/images/eyes.svg') no-repeat;
+
+			@include transform( scaleY( 1 ) );
+
+			-webkit-animation: blink 10s linear infinite;
+			-moz-animation: blink 10s linear infinite;
+			-o-animation: blink 10s linear infinite;
+			animation: blink 10s linear infinite;
+			z-index: 2
+		}
+	}
+}

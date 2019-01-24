@@ -1,0 +1,226 @@
+@import "properties";
+
+$circle-chart-width: 6em;
+$circle-chart-height: 6em;
+
+%chart {
+	width: $circle-chart-width;
+	height: $circle-chart-height;
+
+	@include border-radius( 50% );
+}
+
+%chart-range {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -( $circle-chart-height / 2 );
+	margin-left: -( $circle-chart-width / 2 );
+
+	clip: rect( 0em, ( $circle-chart-width / 2 ), $circle-chart-height, 0em );
+}
+
+.circle-charts {
+	display: table;
+	margin: 0 auto;
+}
+
+.wrapper-chart {
+	float: left;
+}
+
+.wrapper-chart-fixe {
+	position: relative;
+	display: table;
+	margin: 0 auto;
+}
+
+.chart {
+	@extend %chart;
+	/*position: relative;*/
+	display: table-cell;
+	vertical-align: middle;
+
+	.half-left,
+	.half-right  {
+		@extend %chart;
+		@extend %chart-range;
+
+		z-index: 0;
+	}
+	
+	.legend {
+		position: relative;
+		text-align: center;
+		z-index: 1;		
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			width: $circle-chart-width * .8;
+			height: $circle-chart-height * .8;
+			margin-top: -( ( $circle-chart-height / 2 ) * .8 );
+			margin-left: -( ( $circle-chart-width / 2 ) * .8 );
+			background-color: $color-4;
+
+			@include border-radius( 50% );
+		}
+
+		.value,
+		.name {
+			position: relative;
+			display: block;
+		}
+
+		.value {
+			color: $color-2;
+			font-family: $font-5;
+			font-size: .9em;
+
+			&:after {
+				content: '%';
+			}
+		} 
+
+		.name {
+
+			color: $color-2 * 5;
+			font: .7em $font-6;
+		}
+	}
+}
+
+@include chart-style( '1', $color-5 * 1.5, $color-5 );
+@include chart-style( '2', #60BBE5, $color-6 * .9 );
+@include chart-style( '3', #F2D954, $color-7 * .9 );
+@include chart-style( '4', #6bd06b, $color-8 * .9);
+@include chart-style( '5', #FEA651, $color-9 * .9);
+
+@mixin fluid-circle-chart() {
+	.wrapper-chart:nth-child(3n+4) {
+		clear: both;
+	}
+	
+	.wrapper-chart:nth-child(3n+4),
+	.wrapper-chart:nth-child(3n+5),
+	.wrapper-chart:nth-child(3n+6) {
+		margin-top: 1em;
+	}
+}
+
+@media screen and (max-width: 185px) {
+	.wrapper-chart {
+		clear: both;
+	}
+
+	.wrapper-chart:first-child {
+		margin-top: 0;
+	}
+
+	.wrapper-chart:nth-child(1n+1) {
+		margin-top: 1em;
+	}
+}
+
+@media screen and (min-width: 185px) and (max-width: 300px) {
+	.wrapper-chart:nth-child(2n+1) {
+		margin-top: 1em;
+		margin-right: .5em;
+	}
+
+	.wrapper-chart:nth-child(2n+2) {
+		margin-top: 1em;
+	}
+
+	.wrapper-chart:nth-child(200n+2),
+	.wrapper-chart:first-child {
+		margin-top: 0;
+	}
+
+	.wrapper-chart:nth-child(2n+3) {
+		clear: both;
+	}
+}
+
+@media screen and (min-width: 300px) and (max-width: 440px) {
+	.wrapper-chart:nth-child(2n+1) {
+		margin-top: 1em;
+		margin-right: 1.5em;
+	}
+
+	.wrapper-chart:nth-child(2n+2) {
+		margin-top: 1em;
+	}
+
+	.wrapper-chart:nth-child(200n+2),
+	.wrapper-chart:first-child {
+		margin-top: 0;
+	}
+
+	.wrapper-chart:nth-child(2n+3) {
+		clear: both;
+	}
+}
+
+@media screen and (min-width: 440px) and (max-width: 600px) {
+	@include fluid-circle-chart();
+
+	.wrapper-chart:nth-child(3n+1),
+	.wrapper-chart:nth-child(3n+2) {
+		margin-right: 1em;
+	}
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+	@include fluid-circle-chart();
+
+	.wrapper-chart:nth-child(3n+1),
+	.wrapper-chart:nth-child(3n+2) {
+		margin-right: 3.5em;
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+	@include fluid-circle-chart();
+
+	.wrapper-chart:nth-child(3n+1),
+	.wrapper-chart:nth-child(3n+2) {
+		margin-right: 5em;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 900px) {
+	@include fluid-circle-chart();
+
+	.wrapper-chart:nth-child(3n+1),
+	.wrapper-chart:nth-child(3n+2) {
+		margin-right: 7em;
+	}
+}
+
+@media screen and (min-width: 900px) and (max-width: 980px) {
+	@include fluid-circle-chart();
+
+	.wrapper-chart:nth-child(3n+1),
+	.wrapper-chart:nth-child(3n+2) {
+		margin-right: 8.5em;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	.circle-charts {
+		position: relative;
+		width: 100%;
+		margin: none;
+	}
+
+	.wrapper-chart {
+		position: relative;
+		display: table-cell;
+		float: none;
+	}
+}

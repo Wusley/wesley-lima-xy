@@ -1,0 +1,85 @@
+@import "properties";
+ 
+.font-skin:before, %font-skin:before {
+	position: relative;
+  	font: normal normal normal 1em $font-0;
+  	speak: none;
+ 	line-height: 1em;
+ 	text-decoration: none;
+ 	text-align: center;
+}
+
+.font-spin2:before {
+	@extend %font-skin:before;
+	content: '\e800';
+}
+
+.font-linkedin-circled:before {
+	@extend %font-skin:before;
+	content: '\e812';
+	color: $color-linkedin;
+}
+
+.font-beaker:before {
+	@extend %font-skin:before;
+	content: '\e807';
+}
+
+.font-user:before {
+	@extend %font-skin:before;
+	content: '\e806';
+}
+
+.font-th-large-outline:before {
+	@extend %font-skin:before;
+	content: '\e808';
+}
+
+.font-home:before {
+	@extend %font-skin:before;
+	content: '\e80c';
+}
+
+.font-record-outline:before {
+	@extend %font-skin:before;
+	content: '\e801';
+}
+
+.font-comment-empty:before {
+	@extend %font-skin:before;
+	content: '\e802';
+}
+
+.font-mail:before {
+	@extend %font-skin:before;
+	content: '\e80b';
+}
+
+.font-github-circled:before {
+	@extend %font-skin:before;
+	content: '\e810';
+	color: $color-github;
+}
+
+.font-twitter-circled:before {
+	@extend %font-skin:before;
+	content: '\e80a';
+	color: $color-twitter;
+}
+
+.font-facebook-circled:before {
+	@extend %font-skin:before;
+	content: '\e811';
+	color: $color-facebook;
+}
+
+.font-gplus-circled:before {
+	@extend %font-skin:before;
+	content: '\e809';
+	color: $color-gplug;
+}
+
+.font-record:before {
+	@extend %font-skin:before;
+	content: '\e803';
+}

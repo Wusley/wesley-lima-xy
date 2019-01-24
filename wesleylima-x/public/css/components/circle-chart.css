@@ -1,0 +1,356 @@
+/*Size*/
+/*Colors*/
+/*blue*/
+/*dark-gray*/
+/*dark-gray fixed*/
+/*light-yellow*/
+/*white*/
+/*white fixed*/
+/*red*/
+/*medium-blue*/
+/*orange*/
+/*medium-green*/
+/*yellow*/
+/*Timing*/
+/*
+* Prefixes
+*/
+/*
+* Breaks
+*/
+/* line 6, ../../sass/components/circle-chart.scss */
+.chart, .chart .half-left,
+.chart .half-right {
+  width: 6em;
+  height: 6em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 13, ../../sass/components/circle-chart.scss */
+.chart .half-left,
+.chart .half-right {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3em;
+  margin-left: -3em;
+  clip: rect(0em, 3em, 6em, 0em);
+}
+
+/* line 24, ../../sass/components/circle-chart.scss */
+.circle-charts {
+  display: table;
+  margin: 0 auto;
+}
+
+/* line 29, ../../sass/components/circle-chart.scss */
+.wrapper-chart {
+  float: left;
+}
+
+/* line 33, ../../sass/components/circle-chart.scss */
+.wrapper-chart-fixe {
+  position: relative;
+  display: table;
+  margin: 0 auto;
+}
+
+/* line 39, ../../sass/components/circle-chart.scss */
+.chart {
+  /*position: relative;*/
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 46, ../../sass/components/circle-chart.scss */
+.chart .half-left,
+.chart .half-right {
+  z-index: 0;
+}
+/* line 53, ../../sass/components/circle-chart.scss */
+.chart .legend {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+/* line 58, ../../sass/components/circle-chart.scss */
+.chart .legend:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 4.8em;
+  height: 4.8em;
+  margin-top: -2.4em;
+  margin-left: -2.4em;
+  background-color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 74, ../../sass/components/circle-chart.scss */
+.chart .legend .value,
+.chart .legend .name {
+  position: relative;
+  display: block;
+}
+/* line 79, ../../sass/components/circle-chart.scss */
+.chart .legend .value {
+  color: #222222;
+  font-family: "static-bold", Verdana, Helvetica, sans-serif;
+  font-size: .9em;
+}
+/* line 84, ../../sass/components/circle-chart.scss */
+.chart .legend .value:after {
+  content: '%';
+}
+/* line 89, ../../sass/components/circle-chart.scss */
+.chart .legend .name {
+  color: #aaaaaa;
+  font: 0.7em "static-regular", Verdana, Helvetica, sans-serif;
+}
+
+/* line 91, ../../sass/properties.scss */
+.chart-style-1 {
+  background-color: #ffa276;
+}
+/* line 95, ../../sass/properties.scss */
+.chart-style-1 .half-left {
+  background-color: #df6c4f;
+}
+/* line 99, ../../sass/properties.scss */
+.chart-style-1 .half-right {
+  background-color: #ffa276;
+}
+
+/* line 91, ../../sass/properties.scss */
+.chart-style-2 {
+  background-color: #60bbe5;
+}
+/* line 95, ../../sass/properties.scss */
+.chart-style-2 .half-left {
+  background-color: #0083e5;
+}
+/* line 99, ../../sass/properties.scss */
+.chart-style-2 .half-right {
+  background-color: #60bbe5;
+}
+
+/* line 91, ../../sass/properties.scss */
+.chart-style-3 {
+  background-color: #f2d954;
+}
+/* line 95, ../../sass/properties.scss */
+.chart-style-3 .half-left {
+  background-color: #e5b700;
+}
+/* line 99, ../../sass/properties.scss */
+.chart-style-3 .half-right {
+  background-color: #f2d954;
+}
+
+/* line 91, ../../sass/properties.scss */
+.chart-style-4 {
+  background-color: #6bd06b;
+}
+/* line 95, ../../sass/properties.scss */
+.chart-style-4 .half-left {
+  background-color: #38af73;
+}
+/* line 99, ../../sass/properties.scss */
+.chart-style-4 .half-right {
+  background-color: #6bd06b;
+}
+
+/* line 91, ../../sass/properties.scss */
+.chart-style-5 {
+  background-color: #fea651;
+}
+/* line 95, ../../sass/properties.scss */
+.chart-style-5 .half-left {
+  background-color: #e58600;
+}
+/* line 99, ../../sass/properties.scss */
+.chart-style-5 .half-right {
+  background-color: #fea651;
+}
+
+@media screen and (max-width: 185px) {
+  /* line 116, ../../sass/components/circle-chart.scss */
+  .wrapper-chart {
+    clear: both;
+  }
+
+  /* line 120, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:first-child {
+    margin-top: 0;
+  }
+
+  /* line 124, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(1n+1) {
+    margin-top: 1em;
+  }
+}
+@media screen and (min-width: 185px) and (max-width: 300px) {
+  /* line 130, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(2n+1) {
+    margin-top: 1em;
+    margin-right: .5em;
+  }
+
+  /* line 135, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(2n+2) {
+    margin-top: 1em;
+  }
+
+  /* line 140, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(200n+2),
+  .wrapper-chart:first-child {
+    margin-top: 0;
+  }
+
+  /* line 144, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(2n+3) {
+    clear: both;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 440px) {
+  /* line 150, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(2n+1) {
+    margin-top: 1em;
+    margin-right: 1.5em;
+  }
+
+  /* line 155, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(2n+2) {
+    margin-top: 1em;
+  }
+
+  /* line 160, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(200n+2),
+  .wrapper-chart:first-child {
+    margin-top: 0;
+  }
+
+  /* line 164, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(2n+3) {
+    clear: both;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 600px) {
+  /* line 104, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4) {
+    clear: both;
+  }
+
+  /* line 110, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4),
+  .wrapper-chart:nth-child(3n+5),
+  .wrapper-chart:nth-child(3n+6) {
+    margin-top: 1em;
+  }
+
+  /* line 173, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+1),
+  .wrapper-chart:nth-child(3n+2) {
+    margin-right: 1em;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  /* line 104, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4) {
+    clear: both;
+  }
+
+  /* line 110, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4),
+  .wrapper-chart:nth-child(3n+5),
+  .wrapper-chart:nth-child(3n+6) {
+    margin-top: 1em;
+  }
+
+  /* line 182, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+1),
+  .wrapper-chart:nth-child(3n+2) {
+    margin-right: 3.5em;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  /* line 104, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4) {
+    clear: both;
+  }
+
+  /* line 110, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4),
+  .wrapper-chart:nth-child(3n+5),
+  .wrapper-chart:nth-child(3n+6) {
+    margin-top: 1em;
+  }
+
+  /* line 191, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+1),
+  .wrapper-chart:nth-child(3n+2) {
+    margin-right: 5em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  /* line 104, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4) {
+    clear: both;
+  }
+
+  /* line 110, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4),
+  .wrapper-chart:nth-child(3n+5),
+  .wrapper-chart:nth-child(3n+6) {
+    margin-top: 1em;
+  }
+
+  /* line 200, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+1),
+  .wrapper-chart:nth-child(3n+2) {
+    margin-right: 7em;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 980px) {
+  /* line 104, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4) {
+    clear: both;
+  }
+
+  /* line 110, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+4),
+  .wrapper-chart:nth-child(3n+5),
+  .wrapper-chart:nth-child(3n+6) {
+    margin-top: 1em;
+  }
+
+  /* line 209, ../../sass/components/circle-chart.scss */
+  .wrapper-chart:nth-child(3n+1),
+  .wrapper-chart:nth-child(3n+2) {
+    margin-right: 8.5em;
+  }
+}
+@media screen and (min-width: 980px) {
+  /* line 215, ../../sass/components/circle-chart.scss */
+  .circle-charts {
+    position: relative;
+    width: 100%;
+    margin: none;
+  }
+
+  /* line 221, ../../sass/components/circle-chart.scss */
+  .wrapper-chart {
+    position: relative;
+    display: table-cell;
+    float: none;
+  }
+}

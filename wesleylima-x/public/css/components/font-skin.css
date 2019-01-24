@@ -1,0 +1,104 @@
+/*Size*/
+/*Colors*/
+/*blue*/
+/*dark-gray*/
+/*dark-gray fixed*/
+/*light-yellow*/
+/*white*/
+/*white fixed*/
+/*red*/
+/*medium-blue*/
+/*orange*/
+/*medium-green*/
+/*yellow*/
+/*Timing*/
+/*
+* Prefixes
+*/
+/*
+* Breaks
+*/
+/* line 3, ../../sass/components/font-skin.scss */
+.font-skin:before, .font-spin2:before, .font-linkedin-circled:before, .font-beaker:before, .font-user:before, .font-th-large-outline:before, .font-home:before, .font-record-outline:before, .font-comment-empty:before, .font-mail:before, .font-github-circled:before, .font-twitter-circled:before, .font-facebook-circled:before, .font-gplus-circled:before, .font-record:before {
+  position: relative;
+  font: normal normal normal 1em "font-skin";
+  speak: none;
+  line-height: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* line 12, ../../sass/components/font-skin.scss */
+.font-spin2:before {
+  content: '\e800';
+}
+
+/* line 17, ../../sass/components/font-skin.scss */
+.font-linkedin-circled:before {
+  content: '\e812';
+  color: #1a85bc;
+}
+
+/* line 23, ../../sass/components/font-skin.scss */
+.font-beaker:before {
+  content: '\e807';
+}
+
+/* line 28, ../../sass/components/font-skin.scss */
+.font-user:before {
+  content: '\e806';
+}
+
+/* line 33, ../../sass/components/font-skin.scss */
+.font-th-large-outline:before {
+  content: '\e808';
+}
+
+/* line 38, ../../sass/components/font-skin.scss */
+.font-home:before {
+  content: '\e80c';
+}
+
+/* line 43, ../../sass/components/font-skin.scss */
+.font-record-outline:before {
+  content: '\e801';
+}
+
+/* line 48, ../../sass/components/font-skin.scss */
+.font-comment-empty:before {
+  content: '\e802';
+}
+
+/* line 53, ../../sass/components/font-skin.scss */
+.font-mail:before {
+  content: '\e80b';
+}
+
+/* line 58, ../../sass/components/font-skin.scss */
+.font-github-circled:before {
+  content: '\e810';
+  color: #333333;
+}
+
+/* line 64, ../../sass/components/font-skin.scss */
+.font-twitter-circled:before {
+  content: '\e80a';
+  color: #00acee;
+}
+
+/* line 70, ../../sass/components/font-skin.scss */
+.font-facebook-circled:before {
+  content: '\e811';
+  color: #3b5897;
+}
+
+/* line 76, ../../sass/components/font-skin.scss */
+.font-gplus-circled:before {
+  content: '\e809';
+  color: #dd4b37;
+}
+
+/* line 82, ../../sass/components/font-skin.scss */
+.font-record:before {
+  content: '\e803';
+}

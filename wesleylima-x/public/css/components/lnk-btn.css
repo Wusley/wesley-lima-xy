@@ -1,0 +1,125 @@
+/*Size*/
+/*Colors*/
+/*blue*/
+/*dark-gray*/
+/*dark-gray fixed*/
+/*light-yellow*/
+/*white*/
+/*white fixed*/
+/*red*/
+/*medium-blue*/
+/*orange*/
+/*medium-green*/
+/*yellow*/
+/*Timing*/
+/*
+* Prefixes
+*/
+/*
+* Breaks
+*/
+/* line 3, ../../sass/components/lnk-btn.scss */
+.item-wrapper {
+  font: 100 1.2em 'font';
+  float: left;
+  width: 100%;
+  padding-bottom: 100%;
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 14, ../../sass/components/lnk-btn.scss */
+.item-wrapper .icon {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  top: 50%;
+  left: 50%;
+  margin: -0.6em 0 0 -0.5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 26, ../../sass/components/lnk-btn.scss */
+.reset-btn, .lnk-btn {
+  position: absolute;
+  margin: 10%;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  border: .15em solid;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 37, ../../sass/components/lnk-btn.scss */
+.reset-btn:hover, .lnk-btn:hover {
+  color: #222222;
+  border-color: #222222;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* line 45, ../../sass/components/lnk-btn.scss */
+.reset-btn {
+  border: 0;
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+  /* line 52, ../../sass/components/lnk-btn.scss */
+  .item-wrapper {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+  /* line 58, ../../sass/components/lnk-btn.scss */
+  .item-wrapper {
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 840px) {
+  /* line 64, ../../sass/components/lnk-btn.scss */
+  .item-wrapper {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 840px) and (max-width: 1024px) {
+  /* line 70, ../../sass/components/lnk-btn.scss */
+  .item-wrapper {
+    font-size: 1.9em;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  /* line 76, ../../sass/components/lnk-btn.scss */
+  .item-wrapper {
+    font-size: 2.2em;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 2048px) {
+  /* line 82, ../../sass/components/lnk-btn.scss */
+  .item-wrapper {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 2048px) {
+  /* line 88, ../../sass/components/lnk-btn.scss */
+  .item-wrapper {
+    font-size: 2.8em;
+  }
+}

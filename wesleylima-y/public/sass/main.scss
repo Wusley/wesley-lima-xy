@@ -1,0 +1,228 @@
+/* Aux */
+@import "properties";
+@import "default";
+@import "components/font-skin";
+@import "components/loader";
+@import "components/lnk-btn";
+@import "components/messages";
+@import "components/menu";
+@import "components/breaks";
+@import "components/github-repositories";
+@import "components/circle-chart";
+@import "components/bounce-in";
+@import "components/social-media";
+@import "components/logo";
+
+.top-fixed {
+	padding-bottom: $height-footer + ($spacer-default + $break-outside-height * $break-outside-height-fix);/*$break-outside-height - .7em;*/
+}
+
+.all {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+
+	@include box-sizing( border-box );
+}
+
+.header {
+	width: 100%;
+	background: $color-4;
+}
+
+.description {
+	font-size: 1em;
+	color: $color-2 * 2.5;
+	text-transform: lowercase;
+}
+
+%wrapper-content, .wrapper-content {
+	margin: 0 .9em;
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	height: $height-footer;
+	bottom: 0;
+	text-align: center;
+	background: $color-2;
+	
+	.wrapper-break:before,
+	.wrapper-break:after {
+		color: $color-2;
+	}
+
+	.copyright {
+		position: relative;
+		padding: .3em 0 0;
+		color: $color-4;
+		font: .8em $font-3;
+		text-transform: uppercase;
+	}
+
+	@include break-outside( -$break-outside-height );
+}
+
+.feeds {
+	position: relative;
+}
+
+.feed {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	font-family: $font-3;
+
+	@include break-outside( -$break-outside-height );
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.content-feed {
+		@extend %wrapper-content;
+
+		display: block;
+		color: $color-2;
+	}
+
+	.summary {
+		font-size: .9em;
+	}
+
+	.author {
+		display: table;
+		margin-top: .4em;
+		width: 100%;
+    	font-size: .7em;
+	}
+
+	.name {
+		float: left;
+	}
+
+	.published {
+		float: right;
+	}
+}
+
+.wrapper-loader {
+	margin-bottom: $break-outside-height + $spacer-default;
+}
+
+.feed-error {
+	@extend %error;
+
+	display: table;
+	margin: 0 auto;
+	padding: 1em 0;
+	font-size: .9em;
+	color: $color-2 * 4;
+	text-align: center;
+	text-transform: lowercase;
+}
+
+.content-feed {
+	color: $color-2;
+}
+
+.summary {
+	color: $color-2 * 2;
+}
+
+.name,
+.published {
+	text-transform: uppercase;
+    font-family: $font-4;
+    color: $color-2 * 5;
+}
+
+.about,
+.contact,
+.projects {
+	font: 1em $font-3;
+	color: $color-2 * 2;
+}
+
+.skills {
+	display: table;
+	margin-top: .5em;
+	text-align: center;
+
+	.box {
+		display: inline-block;
+		padding: .2em;
+		margin: .3em;
+		border: 1px solid ( $color-2 * 6 );
+		font: .7em $font-1;
+		color: $color-2 * 2;
+		background-color: $color-4;
+
+        @include border-radius( .5em );
+        @include opacity( 0 );
+	}
+}
+
+.ie9 {
+	.skills .box {	
+        @include opacity( 0 );
+	}
+}
+
+@media screen and (max-width: 280px) {
+	.top-fixed {
+		padding-bottom: $height-footer + ($spacer-default + .15 + $break-outside-height * $break-outside-height-fix);/*$break-outside-height - .7em;*/
+	}
+
+	.feed {
+		margin-top: -$break-outside-height + $spacer-default + .25em;
+	}
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+	body {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 640px) {
+	body {
+		font-size: 1.3em;
+	}
+}
+
+@media screen and (min-width: 640px) and (max-width: 840px) {
+	body {
+		font-size: 1.4em;
+	}
+}
+
+@media screen and (min-width: 840px) and (max-width: 1024px) {
+	body {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+	body {
+		font-size: 1.6em;
+	}
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2048px) {
+	body {
+		font-size: 1.7em;
+	}
+}
+
+@media screen and (min-width: 2048px) {
+	body {
+		font-size: 2em;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+}

@@ -1,0 +1,18 @@
+<div class='github-box'>
+    <div class='github-box-header'>
+        <h3>
+            <a href='{{ parseUrl }}'>{{ name }}</a>
+        </h3>
+        <div class='github-stats'>
+            <a class='repo-watchers' href='{{ parseUrl }}/watchers'>{{ watchers }}</a>
+            <a class='repo-forks' href='{{ parseUrl }}/network'>{{ forks }}</a>
+        </div>
+    </div>
+    <div class='github-box-content'>
+        <p>{{ description }} &mdash; <a href='{{ parseUrl }}#readme'>Read More</a></p>
+    </div>
+    <div class='github-box-download'>
+        <p class='repo-update'>Latest commit to <strong>master</strong> on {{ parseDate }}</p>
+        <a class='repo-download' href='{{ parseUrl }}/zipball/master'>Download as zip</a>
+    </div>
+</div> 

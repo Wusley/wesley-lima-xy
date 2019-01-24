@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Wesley Lima - <%= title %></title>
+
+		<link rel="stylesheet" href="/css/default.css">
+	</head>
+	<body>
+		<input type="hidden" name="feeds" value="">
+
+		<section class='feed'>
+			<h1>Feed</h1>
+
+			<section class='feeds'>
+
+			<% feed.forEach( function( a ) { %>
+
+				<article>
+					<a href='<%= a.linkroot %>'>
+						<h2><%= a.site %></h2>
+					</a>
+					<a href='<%= a.link %>'>
+						<h3><%= a.title %></h3>
+
+						<div class='<%= a.id %>'><%= a.content.toString() %></div>
+
+						<footer>
+							<div><%= a.author %></div>
+							<div><%= a.published %></div>
+						</footer>
+					</a>
+				</article>
+			
+			<% } ); %>
+
+			</section>
+		</section>
+	</body>
+<% include ../bottom %>

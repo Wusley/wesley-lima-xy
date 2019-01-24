@@ -1,0 +1,49 @@
+<% include top %>
+
+<body>
+	<div class='all'>
+		<div class='top-fixed'>
+			<% include header %>
+
+			<main class='style-1'>
+				<header>
+					<h1>Principal</h1>
+					<article class='description'>
+						<p>Feed de nóticias</p>
+					</article>
+				</header>
+
+				<div class='wrapper-break break-style-0'></div>
+				
+				<section class='feeds js-feeds' data-maxpage='<%= maxPage %>'>
+				
+				<% var count = 1; %>
+				<% feeds.forEach( function( a, id ) { count > 4 ? count = 1 : count++; %>
+
+					<article class='feed js-feed'>
+						<div class='content-feed'>
+							<a href='<%= a.link %>' target='_blank'>
+								<h3 class='js-title'><%- a.title %></h3>
+
+								<div class='summary js-summary'>
+									 <%- a.content %> 
+								</div>
+							</a>
+
+							<footer class='author'>
+								<small class='name'><%= a.author %></small>
+								<small class='published'><%= a.published %></small>
+							</footer>
+						</div>
+
+						<div class='wrapper-break break-style-<%= count %>'></div>
+					</article>
+				<% } ); %>
+
+				</section>
+			</main>
+		</div>
+		
+		<% include footer %>
+	</div>
+<% include bottom %>

@@ -1,0 +1,94 @@
+{
+  "name": "",
+  "css_prefix_text": "font-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "f0c301ac841dafc38d8eb1b933fc73e5",
+      "css": "spin2",
+      "code": 59392,
+      "src": "fontelico"
+    },
+    {
+      "uid": "9c1376672bb4f1ed616fdd78a23667e9",
+      "css": "comment-empty",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0f444c61b0d2c9966016d7ddb12f5837",
+      "css": "beaker",
+      "code": 59399,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
+      "css": "user",
+      "code": 59398,
+      "src": "entypo"
+    },
+    {
+      "uid": "08db5357646aae59e018ba87f2d466cd",
+      "css": "th-large-outline",
+      "code": 59400,
+      "src": "typicons"
+    },
+    {
+      "uid": "w3nzesrlbezu6f30q7ytyq919p6gdlb6",
+      "css": "home",
+      "code": 59404,
+      "src": "typicons"
+    },
+    {
+      "uid": "1e29f134dfa565422897dacc67dee3e8",
+      "css": "record-outline",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "6c985c88b4c460d6c5a3e34d53361286",
+      "css": "record",
+      "code": 59395,
+      "src": "typicons"
+    },
+    {
+      "uid": "ae3so8q0b0n2h8esv9flua2nmwswa8fd",
+      "css": "mail",
+      "code": 59403,
+      "src": "modernpics"
+    },
+    {
+      "uid": "3261112d66c6462ea20893f42b6f799b",
+      "css": "github-circled",
+      "code": 59408,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "ccf7ed45e7f05a89376f38abaa9d7d13",
+      "css": "twitter-circled",
+      "code": 59402,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "96aafeab29734d1510805687f7695f8f",
+      "css": "facebook-circled",
+      "code": 59409,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "fef29532e2318a0c604f34947024b990",
+      "css": "gplus-circled",
+      "code": 59401,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "d0c177a8e1688175c3445cc6b25bcc90",
+      "css": "linkedin-circled",
+      "code": 59410,
+      "src": "mfglabs"
+    }
+  ]
+}

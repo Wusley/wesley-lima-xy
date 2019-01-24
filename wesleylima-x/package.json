@@ -1,0 +1,48 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.1",
+  "description": "Portfolio Wesley Lima",
+  "keywords": [
+    "OpenShift",
+    "Node.js",
+    "application",
+    "openshift"
+  ],
+  "author": {
+    "name": "OpenShift",
+    "email": "ramr@example.org",
+    "url":  "http://www.openshift.com/"
+  },
+  "homepage": "http://www.openshift.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/openshift/origin-server"
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "express": "3.4.0",
+    "ejs": "*",
+    "request": "*",
+    "underscore": "*",
+    "underscore.string": "*",
+    "xml2js": "*",
+    "opmlparser": "*",
+    "feedparser": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-clean": "~0.5.0"
+  },
+  "bundleDependencies": [],
+  "private": true,
+  "main": "server.js",
+  "license": "BSD-2-Clause"
+}

@@ -1,0 +1,212 @@
+/* line 3, ../../sass/components/github-repositories.scss */
+.projects {
+  width: 100%;
+}
+
+/* Github Box */
+/* line 8, ../../sass/components/github-repositories.scss */
+.github-box-wrap {
+  width: 100%;
+  margin: 0;
+  padding-bottom: .4em;
+  font-size: 1.6rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, ../../sass/components/github-repositories.scss */
+.github-box {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  color: #666;
+  border-radius: 5px;
+}
+/* line 24, ../../sass/components/github-repositories.scss */
+.github-box h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: gray;
+  margin: 0;
+  padding: .4em 70px .4em .4em;
+  font-size: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 34, ../../sass/components/github-repositories.scss */
+.github-box h3 a {
+  display: block;
+  font-weight: bold;
+  color: #4183C4;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* line 46, ../../sass/components/github-repositories.scss */
+.skin-repo, .github-box-header .github-stats a, .github-box-download .repo-download {
+  background: url("/images/btn-sprite.png") no-repeat;
+}
+
+/* Github Box Header */
+/* line 51, ../../sass/components/github-repositories.scss */
+.github-box-header {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px 5px 0 0;
+  background: #fcfcfc;
+  background: -moz-linear-gradient(#fcfcfc, #ebebeb);
+  background: -webkit-linear-gradient(#fcfcfc, #ebebeb);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc',endColorstr='#ebebeb')";
+}
+/* line 61, ../../sass/components/github-repositories.scss */
+.github-box-header .github-stats {
+  position: absolute;
+  top: 50%;
+  right: 1em;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 21px;
+  height: 2em;
+  margin-top: -1em;
+}
+/* line 74, ../../sass/components/github-repositories.scss */
+.github-box-header .github-stats a {
+  display: inline-block;
+  height: 21px;
+  color: #666;
+  padding: 0 5px 0 18px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 83, ../../sass/components/github-repositories.scss */
+.github-box-header .github-stats a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 89, ../../sass/components/github-repositories.scss */
+.github-box-header .github-stats .repo-watchers {
+  border-right: 1px solid #ddd;
+  background-position: 3px 4px;
+}
+/* line 94, ../../sass/components/github-repositories.scss */
+.github-box-header .github-stats .repo-forks {
+  background-position: 2px -14px;
+  padding-left: 15px;
+}
+
+/* Github Box Content */
+/* line 102, ../../sass/components/github-repositories.scss */
+.github-box-content {
+  padding: .8em;
+  font-weight: 300;
+  font-size: .6em;
+}
+/* line 107, ../../sass/components/github-repositories.scss */
+.github-box-content p {
+  margin: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 115, ../../sass/components/github-repositories.scss */
+.github-box-content .repo-link {
+  font-weight: bold;
+}
+
+/* line 120, ../../sass/components/github-repositories.scss */
+.github-box-download {
+  position: relative;
+  border-top: 1px solid #ddd;
+  background: white;
+  border-radius: 0 0 3px 3px;
+  padding: 10px;
+  /*height: 24px;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 130, ../../sass/components/github-repositories.scss */
+.github-box-download .repo-update {
+  margin: 0;
+  font-size: .6em;
+  color: #666;
+  line-height: 24px;
+  width: 100%;
+  padding-right: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 143, ../../sass/components/github-repositories.scss */
+.github-box-download .repo-update strong {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
+/* line 150, ../../sass/components/github-repositories.scss */
+.github-box-download .repo-download {
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #666;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  text-indent: -9999px;
+  width: 24px;
+  padding: 0;
+  background-position: 4px -31px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 172, ../../sass/components/github-repositories.scss */
+.github-box-download .repo-download:hover {
+  color: #527894;
+  border-color: #cfe3ed;
+  border-bottom-color: #9fc7db;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Breakpoint content-driven */
+@media screen and (min-width: 800px) {
+  /* line 184, ../../sass/components/github-repositories.scss */
+  .projects {
+    display: table;
+  }
+
+  /* line 188, ../../sass/components/github-repositories.scss */
+  .github-box-wrap {
+    width: 50%;
+    float: left;
+    padding-bottom: .5em;
+  }
+
+  /* line 194, ../../sass/components/github-repositories.scss */
+  .github-box-wrap:nth-child(2n+1) {
+    padding-right: .2em;
+  }
+
+  /* line 198, ../../sass/components/github-repositories.scss */
+  .github-box-wrap:nth-child(2n+2) {
+    padding-left: .2em;
+  }
+}

@@ -1,0 +1,124 @@
+@import "properties";
+
+@-webkit-keyframes bounceIn {
+	0% {
+		-webkit-transform: translateY(100px);
+		transform: translateY(100px);
+
+        @include opacity( 0 );
+	}
+	60% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+
+        @include opacity( 1 );
+	}
+	80% {
+		-webkit-transform: translateY(10px);
+		transform: translateY(10px);
+
+		@include opacity( 1 );
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+
+		@include opacity( 1 );
+	}
+}
+
+@-moz-keyframes bounceIn {
+	0% {
+		-moz-transform: translateY(100px);
+		transform: translateY(100px);
+
+		@include opacity( 0 );
+	}
+	60% {
+		-moz-transform: translateY(-30px);
+		transform: translateY(-30px);
+
+		@include opacity( 1 );
+	}
+	80% {
+		-moz-transform: translateY(10px);
+		transform: translateY(10px);
+
+		@include opacity( 1 );
+	}
+	100% {
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+
+		@include opacity( 1 );
+	}
+}
+
+@-o-keyframes bounceIn {	
+	0% {
+		-o-transform: translateY(100px);
+		transform: translateY(100px);
+
+		@include opacity( 0 );
+	}
+	60% {
+		-o-transform: translateY(-30px);
+		transform: translateY(-30px);
+
+		@include opacity( 1 );
+	}
+	80% {
+		-o-transform: translateY(10px);
+		transform: translateY(10px);
+
+		@include opacity( 1 );
+	}
+	100% {
+		-o-transform: translateY(0);
+		transform: translateY(0);
+
+		@include opacity( 1 );
+	}
+}
+
+@keyframes bounceIn {	
+	0% {
+		transform: translateY(100px);
+
+		@include opacity( 0 );
+	}
+	60% {
+		transform: translateY(-30px);
+
+		@include opacity( 1 );
+	}
+	80% {
+		transform: translateY(10px);
+
+		@include opacity( 1 );
+	}
+	100% {
+		transform: translateY(0);
+
+		@include opacity( 1 );
+	}
+}
+
+.bounce-in {
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-name: bounceIn;
+	-moz-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
+	animation-name: bounceIn;
+}

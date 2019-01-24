@@ -1,0 +1,32 @@
+@import "properties";
+
+.navigation {
+	position: relative;
+	display: table;
+	width: 100%;
+	border-top: .5em solid $color-2;
+}
+
+.bg-navigation-fixed {
+	position: absolute;
+	background: $color-2;
+	width: 100%;
+	height: 49%;
+	margin-top: -1%;
+}
+
+.menu {
+	position: relative;
+	display: table;
+	width: inherit;
+	margin: 0;
+	padding: 0;
+
+	@include box-sizing( border-box );
+
+	.item-wrapper {
+		position: relative;
+		width: 20%;
+		padding-bottom: 20%;
+	}
+}

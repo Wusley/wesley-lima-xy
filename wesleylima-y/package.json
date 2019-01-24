@@ -1,0 +1,47 @@
+{
+  "name": "wesleylima",
+  "version": "0.0.0-17",
+  "description": "Portifólio Wesley Lima",
+  "keywords": [
+    "Node.js",
+    "application"
+  ],
+  "subdomain": "wesleylima",
+  "domains": [
+    "wesley.pro.br",
+    "www.wesley.pro.br"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": {
+    "name": "Wesley Lima",
+    "email": "contato@wesley.pro.br",
+    "url": "http://wesley.pro.br"
+  },
+  "homepage": "http://wesley.pro.br",
+  "dependencies": {
+    "express": "3.4.0",
+    "ejs": "*",
+    "request": "*",
+    "underscore": "*",
+    "underscore.string": "*",
+    "xml2js": "*",
+    "opmlparser": "*",
+    "feedparser": "*",
+    "feed-read": "*"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-clean": "~0.5.0"
+  },
+  "engines": {
+    "node": ">= 0.10.x"
+  },
+  "main": "server.js"
+}

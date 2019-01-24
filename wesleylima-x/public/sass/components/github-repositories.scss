@@ -1,0 +1,201 @@
+@import "compass/css3";
+
+.projects {
+    width: 100%;
+}
+
+/* Github Box */
+.github-box-wrap {
+    width: 100%;
+    margin: 0;
+    padding-bottom: .4em;
+    font-size: 1.6rem;
+
+    @include box-sizing( border-box );
+}
+
+.github-box {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    color: #666;
+    border-radius: 5px;
+
+    h3 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        color: gray;
+        margin: 0; 
+        padding: .4em 70px .4em .4em;
+        font-size: 1em;
+
+        @include box-sizing( border-box );
+
+        a {
+            display: block;
+            font-weight: bold;
+            color: #4183C4;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.skin-repo {
+    background: url('/images/btn-sprite.png') no-repeat;
+}
+
+/* Github Box Header */
+.github-box-header {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    background: #fcfcfc;
+    background: -moz-linear-gradient(#fcfcfc, #ebebeb);
+    background: -webkit-linear-gradient(#fcfcfc, #ebebeb);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc',endColorstr='#ebebeb')";
+
+    .github-stats {
+        position: absolute;
+        top: 50%;
+        right: 1em;
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 21px;
+        height: 2em;
+        margin-top: -1em;
+
+        a {
+            display: inline-block;
+            height: 21px;
+            color: #666;
+            padding: 0 5px 0 18px;
+            @extend .skin-repo;
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+            opacity: 0.7;
+
+            &:hover {
+                filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+                opacity: 1;
+            }
+        }
+
+        .repo-watchers {
+            border-right: 1px solid #ddd;
+            background-position: 3px 4px;
+        }
+
+        .repo-forks {
+            background-position: 2px -14px;
+            padding-left: 15px;
+        }
+    }
+}
+
+/* Github Box Content */
+.github-box-content {
+    padding: .8em;
+    font-weight: 300;
+    font-size: .6em;
+
+    p {
+        margin: 0;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .repo-link {
+        font-weight: bold;
+    }
+}
+
+.github-box-download {
+    position: relative;
+    border-top: 1px solid #ddd;
+    background: white;
+    border-radius: 0 0 3px 3px;
+    padding: 10px;
+    /*height: 24px;*/
+
+    @include box-sizing( border-box );
+
+    .repo-update {
+        margin: 0;
+        font-size: .6em;
+        color: #666;
+        line-height: 24px;
+        width: 100%;
+        padding-right: 30px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include box-sizing( border-box );
+
+        strong {
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+
+    .repo-download {
+        position: absolute;
+        display: block;
+        top: 10px;
+        right: 10px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+        color: #666;
+        font-weight: bold;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+        border: 1px solid #ddd;
+        border-bottom-color: #bbb;
+        border-radius: 3px;
+        text-indent: -9999px;
+        width: 24px;
+        padding: 0;
+        @extend .skin-repo;
+        background-position: 4px -31px;
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+        opacity: 0.7;
+
+        &:hover {
+            color: #527894;
+            border-color: #cfe3ed;
+            border-bottom-color: #9fc7db;
+            filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+            opacity: 1;
+        }
+    }
+}
+
+/* Breakpoint content-driven */
+@media screen and (min-width: 800px) {
+    .projects {
+        display: table;
+    }
+
+    .github-box-wrap {
+        width: 50%;
+        float: left;
+        padding-bottom: .5em;
+    }
+
+    .github-box-wrap:nth-child(2n+1) {
+        padding-right: .2em;
+    }
+
+    .github-box-wrap:nth-child(2n+2) {
+        padding-left: .2em;
+    }
+}
